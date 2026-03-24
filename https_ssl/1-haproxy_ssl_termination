@@ -38,3 +38,4 @@ backend teta_backend
     balance roundrobin
     server 7011-web-01 13.218.68.141:80 check
     server 7011-web-02 54.243.9.92:80 check
+    
