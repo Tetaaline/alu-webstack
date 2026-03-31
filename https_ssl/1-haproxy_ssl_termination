@@ -26,17 +26,17 @@ defaults
     errorfile 503 /etc/haproxy/errors/503.http
     errorfile 504 /etc/haproxy/errors/504.http
 
-frontend lance_frontend
+frontend teta_frontend
     bind *:80
-    default_backend lance_backend
+    default_backend teta_backend
 
-frontend lance_frontend_https
+frontend teta_frontend_https
     bind *:443 ssl crt /etc/haproxy/certs/www.pem
-    default_backend lance_backend
+    default_backend teta_backend
 
-backend lance_backend
+backend teta_backend
     balance roundrobin
-    server 7011-web-01 44.211.45.35:80 check
-    server 7011-web-02 44.211.161.173:80 check
+    server 7011-web-01 13.218.68.141:80 check
+    server 7011-web-02 54.243.9.92:80 check
     
     
